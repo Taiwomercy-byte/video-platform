@@ -1,5 +1,7 @@
 import Image from "next/image";
 
+console.log(process.env.NEXT_PUBLIC_SUPABASE_URL);
+
 export default function Home() {
   return (
     <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
@@ -41,14 +43,6 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Image
-            className="dark:invert"
-            src="/vercel.svg"
-            alt="Vercel logomark"
-            width={16}
-            height={16}
-            style={{ height: "auto" }}
-            />
             Deploy Now
           </a>
           <a
